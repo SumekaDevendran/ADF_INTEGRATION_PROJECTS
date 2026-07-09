@@ -1,0 +1,15 @@
+{
+	"name": "adf-sample-dev-india",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "10771339-c069-4d8f-a7bd-5759c868ab16",
+		"tenantId": "a587937f-1b82-499f-b9de-8f5f16593baf"
+	}
+}

@@ -5,13 +5,25 @@
 		"factoryName": {
 			"value": "adf-sample-dev-india"
 		},
+		"LSBinarytxt_connectionString": {
+			"value": ""
+		},
 		"LS_BLOB_SQLSERVER_password": {
+			"value": ""
+		},
+		"LS_SQL_TABLE_ADLS_PARQUET_accountKey": {
 			"value": ""
 		},
 		"LS_SqlServer1_password": {
 			"value": ""
 		},
+		"LSbinaryfile_accountKey": {
+			"value": ""
+		},
 		"ls_AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"ls_sql_csv file_password": {
 			"value": ""
 		},
 		"LS_BLOB_SQLSERVER_properties_typeProperties_server": {
@@ -23,6 +35,9 @@
 		"LS_BLOB_SQLSERVER_properties_typeProperties_userName": {
 			"value": "sqlserver001"
 		},
+		"LS_SQL_TABLE_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://sumeka002.dfs.core.windows.net/"
+		},
 		"LS_SqlServer1_properties_typeProperties_server": {
 			"value": "SUMEKA\\SQLEXPRESS"
 		},
@@ -30,6 +45,18 @@
 			"value": "sampledb"
 		},
 		"LS_SqlServer1_properties_typeProperties_userName": {
+			"value": "sqlserver001"
+		},
+		"LSbinaryfile_properties_typeProperties_url": {
+			"value": "https://sumeka002.dfs.core.windows.net/"
+		},
+		"ls_sql_csv file_properties_typeProperties_server": {
+			"value": "SUMEKA\\SQLEXPRESS"
+		},
+		"ls_sql_csv file_properties_typeProperties_database": {
+			"value": "sampledb"
+		},
+		"ls_sql_csv file_properties_typeProperties_userName": {
 			"value": "sqlserver001"
 		}
 	}

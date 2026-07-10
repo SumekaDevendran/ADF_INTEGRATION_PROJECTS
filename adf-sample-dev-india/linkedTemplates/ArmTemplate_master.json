@@ -7,17 +7,33 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-sample-dev-india"
 		},
+		"LSBinarytxt_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LSBinarytxt'"
+		},
 		"LS_BLOB_SQLSERVER_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_BLOB_SQLSERVER'"
+		},
+		"LS_SQL_TABLE_ADLS_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_TABLE_ADLS_PARQUET'"
 		},
 		"LS_SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SqlServer1'"
 		},
+		"LSbinaryfile_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LSbinaryfile'"
+		},
 		"ls_AzureBlobStorage1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_AzureBlobStorage1'"
+		},
+		"ls_sql_csv file_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_sql_csv file'"
 		},
 		"LS_BLOB_SQLSERVER_properties_typeProperties_server": {
 			"type": "string",
@@ -31,6 +47,10 @@
 			"type": "string",
 			"defaultValue": "sqlserver001"
 		},
+		"LS_SQL_TABLE_ADLS_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sumeka002.dfs.core.windows.net/"
+		},
 		"LS_SqlServer1_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "SUMEKA\\SQLEXPRESS"
@@ -40,6 +60,22 @@
 			"defaultValue": "sampledb"
 		},
 		"LS_SqlServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sqlserver001"
+		},
+		"LSbinaryfile_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sumeka002.dfs.core.windows.net/"
+		},
+		"ls_sql_csv file_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "SUMEKA\\SQLEXPRESS"
+		},
+		"ls_sql_csv file_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sampledb"
+		},
+		"ls_sql_csv file_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "sqlserver001"
 		},
@@ -70,6 +106,15 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LSBinarytxt_connectionString": {
+						"value": "[parameters('LSBinarytxt_connectionString')]"
+					},
+					"LS_SQL_TABLE_ADLS_PARQUET_accountKey": {
+						"value": "[parameters('LS_SQL_TABLE_ADLS_PARQUET_accountKey')]"
+					},
+					"LSbinaryfile_accountKey": {
+						"value": "[parameters('LSbinaryfile_accountKey')]"
+					},
 					"ls_AzureBlobStorage1_connectionString": {
 						"value": "[parameters('ls_AzureBlobStorage1_connectionString')]"
 					},
@@ -78,6 +123,15 @@
 					},
 					"LS_SqlServer1_password": {
 						"value": "[parameters('LS_SqlServer1_password')]"
+					},
+					"ls_sql_csv file_password": {
+						"value": "[parameters('ls_sql_csv file_password')]"
+					},
+					"LS_SQL_TABLE_ADLS_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_TABLE_ADLS_PARQUET_properties_typeProperties_url')]"
+					},
+					"LSbinaryfile_properties_typeProperties_url": {
+						"value": "[parameters('LSbinaryfile_properties_typeProperties_url')]"
 					},
 					"LS_BLOB_SQLSERVER_properties_typeProperties_server": {
 						"value": "[parameters('LS_BLOB_SQLSERVER_properties_typeProperties_server')]"
@@ -96,6 +150,15 @@
 					},
 					"LS_SqlServer1_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SqlServer1_properties_typeProperties_userName')]"
+					},
+					"ls_sql_csv file_properties_typeProperties_server": {
+						"value": "[parameters('ls_sql_csv file_properties_typeProperties_server')]"
+					},
+					"ls_sql_csv file_properties_typeProperties_database": {
+						"value": "[parameters('ls_sql_csv file_properties_typeProperties_database')]"
+					},
+					"ls_sql_csv file_properties_typeProperties_userName": {
+						"value": "[parameters('ls_sql_csv file_properties_typeProperties_userName')]"
 					}
 				}
 			},

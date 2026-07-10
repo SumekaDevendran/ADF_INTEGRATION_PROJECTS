@@ -7,11 +7,11 @@
 		"typeProperties": {
 			"server": "SUMEKA\\SQLEXPRESS",
 			"database": "sampledb",
-			"encrypt": "optional",
-			"trustServerCertificate": false,
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "sqlserver001",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0NmUyN2ZkYy00ODZjLTQ1MDUtODc2MC1mZmE4ZDVmMDBhZjQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjOTFiMWQ2Zi0yMTBmLTRmY2ItODFkYy1iOWY2MjYyM2NiYWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SH-integrationRuntime1",

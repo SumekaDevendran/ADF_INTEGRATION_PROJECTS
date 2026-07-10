@@ -1,0 +1,19 @@
+{
+	"name": "dsParquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_TABLE_ADLS_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "csvtoparquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

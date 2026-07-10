@@ -1,0 +1,33 @@
+{
+	"name": "DScsvfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_csv file",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "tenantname",
+				"type": "varchar"
+			},
+			{
+				"name": "storeid",
+				"type": "varchar"
+			},
+			{
+				"name": "storename",
+				"type": "varchar"
+			},
+			{
+				"name": "manufacturer",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "statefulsourceraw",
+			"table": "cancelledtenants"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "dsBinary2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LSbinaryfile",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "outputtextfile"
+			}
+		}
+	}
+}

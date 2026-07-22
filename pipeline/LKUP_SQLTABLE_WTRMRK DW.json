@@ -1,0 +1,33 @@
+{
+	"name": "LKUP_SQLTABLE_WTRMRK DW",
+	"properties": {
+		"activities": [
+			{
+				"name": "LKUP_SQLTABLE_WTRMRK DW",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "select TableSchema, TableName, WatermarkColumn,LastLoadValue from dbo.ADF_Watermark_Table",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "SqlServerTable2",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}

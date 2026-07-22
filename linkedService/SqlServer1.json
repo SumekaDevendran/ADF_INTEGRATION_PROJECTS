@@ -1,0 +1,27 @@
+{
+	"name": "SqlServer1",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SUMEKA\\SQLEXPRESS",
+			"database": "RetailDw_Dev",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "SUMEKA/sumek",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault2",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLMIGRATION"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SH-integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

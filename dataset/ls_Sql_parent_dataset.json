@@ -5,8 +5,41 @@
 			"referenceName": "SqlServer2",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"SchemaName": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
-		"schema": []
+		"schema": [
+			{
+				"name": "TableSchema",
+				"type": "varchar"
+			},
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "WatermarkColumn",
+				"type": "varchar"
+			},
+			{
+				"name": "LastLoadValue",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().SchemaName",
+				"type": "Expression"
+			}
+		}
 	}
 }
